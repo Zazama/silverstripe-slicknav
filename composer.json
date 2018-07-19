@@ -16,5 +16,11 @@
 	"require": {
 		"silverstripe/framework": "^4.0"
 	},
+	"extra": {
+        "expose": [
+            "css",
+            "javascript"
+        ]
+	},
 	"minimum-stability": "dev"
 }

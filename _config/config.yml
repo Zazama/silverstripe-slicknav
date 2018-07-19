@@ -4,4 +4,4 @@ Name: slicknav
 
 SilverStripe\CMS\Model\SiteTree:
   extensions:
-    Zazama\SlickNavSiteTreeExtension
+    - Zazama\SlickNavSiteTreeExtension
