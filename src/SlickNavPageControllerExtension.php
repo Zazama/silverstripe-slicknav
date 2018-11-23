@@ -53,8 +53,7 @@ class SlickNavPageControllerExtension extends Extension {
 			}
 		");
 		Requirements::customScript("
-			\$snjquery = \$snjquery || jQuery
-			\$snjquery('" . $this->config()->get('navigationIdentifier') . "').slicknav(" . $optionsString . ");"
+			jQuery('" . $this->config()->get('navigationIdentifier') . "').slicknav(" . $optionsString . ");"
 		);
 	}
 }
