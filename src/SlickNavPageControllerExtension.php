@@ -27,8 +27,7 @@ class SlickNavPageControllerExtension extends Extension {
      * @config
      */
 	private static $options = [
-		'label' => 'Menu',
-		'prependTo' => 'body'
+		'label' => 'Menu'
 	];
 
 	/**
@@ -54,6 +53,7 @@ class SlickNavPageControllerExtension extends Extension {
 			}
 		");
 		Requirements::customScript("
+			\$snjquery = \$snjquery || jQuery
 			\$snjquery('" . $this->config()->get('navigationIdentifier') . "').slicknav(" . $optionsString . ");"
 		);
 	}

@@ -9,7 +9,7 @@ adds SlickNav to your theme
 ### configuration
 
 ```yaml
-Zazama\SlickNavSiteTreeExtension:
+Zazama\SlickNavPageControllerExtension:
   #ul containing your navigation
   navigationIdentifier: '#Navigation'
   
