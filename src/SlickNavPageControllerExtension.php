@@ -6,7 +6,7 @@ use SilverStripe\View\Requirements;
 use SilverStripe\Core\Config\Configurable;
 use SilverStripe\Core\Extension;
 
-class SlickNavSiteTreeExtension extends Extension {
+class SlickNavPageControllerExtension extends Extension {
 
 	use Configurable;
 
@@ -36,7 +36,7 @@ class SlickNavSiteTreeExtension extends Extension {
      */
 	private static $include_jquery = true;
 
-	public function contentcontrollerInit() {
+	public function onAfterInit() {
 		Requirements::css('zazama/silverstripe-slicknav:css/slicknav.min.css');
 		if($this->config()->get('include_jquery')) {
 			Requirements::javascript('zazama/silverstripe-slicknav:javascript/jquery-3.3.1.min.js');

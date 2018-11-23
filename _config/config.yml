@@ -2,6 +2,6 @@
 Name: slicknav
 ---
 
-SilverStripe\CMS\Model\SiteTree:
+PageController:
   extensions:
-    - Zazama\SlickNavSiteTreeExtension
+    - Zazama\SlickNavPageControllerExtension
