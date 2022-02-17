@@ -38,7 +38,7 @@ class SlickNavPageControllerExtension extends Extension {
 	public function onAfterInit() {
 		Requirements::css('zazama/silverstripe-slicknav:css/slicknav.min.css');
 		if($this->config()->get('include_jquery')) {
-			Requirements::javascript('zazama/silverstripe-slicknav:javascript/jquery-3.3.1.min.js');
+			Requirements::javascript('zazama/silverstripe-slicknav:javascript/jquery-3.6.0.min.js');
 		}
 		Requirements::javascript('zazama/silverstripe-slicknav:javascript/jquery.slicknav.min.js');
 		$optionsString = json_encode($this->config()->get('options'), JSON_FORCE_OBJECT);
